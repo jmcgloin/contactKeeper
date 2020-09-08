@@ -1,4 +1,5 @@
-const express = require('express');
+//const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 // CRUD
@@ -37,4 +38,5 @@ router.delete('/:id', (req, res) => {
 	res.json({ msg: `Delete contact ${id}` });
 });
 
-module.exports = router;
+// module.exports = router;
+export default router;
